@@ -1,0 +1,38 @@
+@media print {
+  .print-p-0 {
+    padding: 0px !important;
+  }
+    html, body {
+        width: 100%;
+      }
+  
+    .print-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform-origin: center;
+      margin: 0 auto;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+      table {
+        width: 100%;
+        table-layout: auto;
+      }
+    
+      td, th {
+        word-break: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+        hyphens: auto;
+      }
+
+  }
+
+  @page {
+    margin-top: 1cm !important;
+    margin-right: 0.5cm !important;
+    margin-bottom: 2cm !important;
+    margin-left: 0.5cm !important;
+  }
